@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaLinkedin, FaMedium, FaTwitter, FaDev } from 'react-icons/fa/index';
+import { FaLinkedin, FaTwitter, FaDev, FaGithub } from 'react-icons/fa/index';
 export class Cover extends Component {
   render() {
     return (
@@ -20,13 +20,13 @@ export class Cover extends Component {
               <FaLinkedin />
             </a>
             <a href="/">
-              <FaMedium />
-            </a>
-            <a href="/">
               <FaTwitter />
             </a>
             <a href="/">
               <FaDev />
+            </a>
+            <a href="/">
+              <FaGithub />
             </a>
           </p>
         </section>

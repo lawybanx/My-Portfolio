@@ -7,21 +7,17 @@ export class Nav extends Component {
         <header className="masthead mb-auto">
           <h3 className="masthead-brand">Moh-Awwal</h3>
           <nav className="nav nav-masthead justify-content-center">
-            <button
+            <a
               className="nav-link active"
+              href="#"
               onClick={this.props.showContent}
-              style={{
-                borderTop: 'none',
-                borderRight: 'none',
-                borderLeft: 'none'
-              }}
             >
               About
-            </button>
-            <a className="nav-link" href="/">
+            </a>
+            <a className="nav-link" href="#">
               Projects
             </a>
-            <a className="nav-link" href="/">
+            <a className="nav-link" href="#">
               Contact
             </a>
           </nav>
