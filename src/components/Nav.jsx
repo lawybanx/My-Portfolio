@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export class Nav extends Component {
   render() {
     return (
       <React.Fragment>
         <header className="masthead mb-auto">
-          <h3 className="masthead-brand">Moh-Awwal</h3>
+          <Link to="/">
+            <h3 className="masthead-brand">Moh-Awwal</h3>
+          </Link>
           <nav className="nav nav-masthead justify-content-center">
-            <a
-              className="nav-link active"
-              href="#"
-              onClick={this.props.showContent}
-            >
+            <Link className="nav-link" to="/about">
               About
-            </a>
-            <a className="nav-link" href="#">
+            </Link>
+            <Link className="nav-link" to="/projects">
               Projects
-            </a>
-            <a className="nav-link" href="#">
+            </Link>
+            <Link className="nav-link" to="/">
               Contact
-            </a>
+            </Link>
           </nav>
         </header>
       </React.Fragment>

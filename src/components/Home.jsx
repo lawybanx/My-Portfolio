@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import { FaLinkedin, FaTwitter, FaDev, FaGithub } from 'react-icons/fa/index';
-export class Cover extends Component {
+import { IoMdHand } from 'react-icons/io';
+import { Link } from 'react-router-dom';
+
+class Home extends Component {
   render() {
     return (
       <React.Fragment>
         <section className="cover ">
-          <h1 className="cover-heading">Hi 👋, I'm Awwal Bankole</h1>
+          <h1 className="cover-heading">
+            Hi <IoMdHand />, I'm Awwal Bankole
+          </h1>
           <p className="lead">
             I'm a Frontend and React js developer. I create websites and web
             apps. <br /> Click the button below to get in touch
           </p>
           <p className="lead">
-            <a href="/" className="btn btn-lg btn-secondary">
+            <Link to="/contact" className="btn btn-lg btn-secondary">
               Contact me
-            </a>
+            </Link>
           </p>
           <p className="lead icons mt-auto">
             <a href="/">
@@ -35,4 +40,4 @@ export class Cover extends Component {
   }
 }
 
-export default Cover;
+export default Home;
